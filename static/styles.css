@@ -1,0 +1,53 @@
+body {
+    background-image: url('https://media.istockphoto.com/id/1367728606/vector/conversational-ai-concept-natural-language-processing-nlp-computational-linguistics-concept.jpg?s=612x612&w=0&k=20&c=YB1PDavNi9HCRnFlhb2g5y9lhOl3CIAxbSNvZifB_F0=');
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    background-color: #d9f0ff; /* Light blue background */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background: linear-gradient(135deg, #ffebcc, hsl(189, 100%, 91%)); /* Light orange to pink gradient */
+    padding: 40px;
+    border-radius: 20px; /* Softer, rounded edges */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* More pronounced shadow */
+    width: 450px; /* Slightly larger width */
+    max-width: 90%;
+    border: 3px solid #7d7bff; /* Pink border to match the gradient */
+}
+
+h1 {
+    margin-bottom: 10px;
+    color: #4a4a4a; /* Dark gray for better contrast */
+    font-size: 28px; /* Larger font size for the heading */
+    font-weight: bold;
+}
+
+p {
+    margin-bottom: 20px;
+    color: #555; /* Soft gray text */
+    font-size: 18px; /* Slightly larger font for better readability */
+}
+
+button {
+    cursor: pointer;
+    background-color: hsl(335, 100%, 50%); /* Blue for the button */
+    border: none;
+    color: white;
+    padding: 12px 30px; /* Larger button */
+    font-size: 18px; /* Bigger text for buttons */
+    border-radius: 10px; /* Rounded button edges */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly larger on hover */
+}

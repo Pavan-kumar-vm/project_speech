@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a2e; /* Matches the dark blue background */
+    color: #fff; /* White text for better contrast */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background: #2e4053; /* Matches the container's dark background */
+    padding: 40px; /* Increased padding for larger size */
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); /* Enhanced shadow */
+    width: 500px; /* Larger width */
+    max-width: 100%;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #ffffff; /* White for better contrast */
+    font-size: 28px; /* Larger heading */
+}
+
+textarea {
+    width: 100%; /* Full width */
+    height: 150px; /* Increased height */
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 16px; /* Slightly larger font size */
+    border: none; /* Removed border for a cleaner look */
+    border-radius: 5px;
+    resize: none;
+    background: #1f2833; /* Matches the container background */
+    color: #ffffff; /* White text inside textarea */
+}
+
+button {
+    cursor: pointer;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 5px;
+    margin: 10px; /* Increased margin for better spacing */
+    transition: background-color 0.3s ease;
+    width: 150px; /* Larger button width */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#recordBtn {
+    background-color: #ff4500; /* Red for record */
+}
+
+#stopBtn {
+    background-color: #ff6347; /* Slightly lighter red for stop */
+}
+
+#saveBtn {
+    background-color: #32cd32; /* Green for save */
+}
+
+/* Moving Audio Signal Animation */
+.audio-signal {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin: 20px auto; /* Space above and below the signal */
+}
+
+.bar {
+    width: 10px;
+    height: 25px;
+    background-color: #00ff7f; /* Light green color */
+    animation: bounce 1s infinite ease-in-out;
+}
+.audio-wave {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.wave {
+    width: 8px;
+    height: 40px;
+    background: #fff;
+    margin: 0 4px;
+    border-radius: 4px;
+    animation: wave-animation 1.5s infinite;
+}
+
+.wave:nth-child(even) {
+    animation-delay: 0.3s;
+}
+
+@keyframes wave-animation {
+    0%, 100% {
+        height: 20px;
+    }
+    50% {
+        height: 60px;
+    }
+}
